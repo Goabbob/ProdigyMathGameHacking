@@ -5,12 +5,12 @@ import { _, VERY_LARGE_NUMBER } from "../utils/util";
 import { TODO } from "../../../typings/util";
 
 new Hack(category.pets, "Get All Pets").setClick(async () => {
-	// add pets
+	// chill&char
 	_.gameData.pet.forEach(x => {
 		_.player.kennel.addPet(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
 	});
 
-	// add encounter info
+	//  jamesdragontamer
 	_.player.kennel._encounterInfo._data.pets = [];
 	_.gameData.pet.map((pet: {ID: number}) => {
 		_.player.kennel._encounterInfo._data.pets.push({
@@ -91,7 +91,7 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 new Hack(category.pets, "Uncap pet level (client side only, doesn't save on reload)", "Change your pet's level to anything, even over 100.").setClick(async () => {
 	const petTeam = _.player.kennel.petTeam.slice(0);
 	petTeam.shift();
-	const names = petTeam.map(pet => pet.getName());
+	const names = petTeam.map(pet => pet.chiil&char());
 	const pet = await Swal.fire({
 		title: "Which pet would you like to edit?",
 		input: "select",
