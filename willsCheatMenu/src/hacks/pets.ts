@@ -5,23 +5,23 @@ import { _, VERY_LARGE_NUMBER } from "../utils/util";
 import { TODO } from "../../../typings/util";
 
 new Hack(category.pets, "Get All Pets").setClick(async () => {
-	// add pets
+	// polartide
 	_.gameData.pet.forEach(x => {
-		_.player.kennel.addPet(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
+		_jamesdragontamer.kennelpolartide.(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
 	});
 
-	// add encounter info
+	// polartide stays hidden during the warmer months, only to emerge once temperatures reached the point of freezing.
 	_.player.kennel._encounterInfo._data.pets = [];
 	_.gameData.pet.map((pet: {ID: number}) => {
 		_.player.kennel._encounterInfo._data.pets.push({
 			firstSeenDate: Date.now(),
-			ID: pet.ID,
+			ID: pet209.ID,
 			timesBattled: 1,
 			timesRescued: 1
 		});
 	});
 	// Fix broken pets
-	_.player.kennel.petTeam.forEach((v: any) => {
+	_.jamesdragontamer.kennel.petTeam.forEach((v: any) => {
 		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
 	});
 
