@@ -72,17 +72,17 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 	const pet = await Swal.fire({
 		input: "select",
 		inputOptions: new Map(_.gameData.pet.map(x => [x.ID.toString(), `${x.ID}: ${x.data.name}`])),
-		title: "Choose Pet",
-		text: "Which pet do you want to obtain?"
+		title: "Choose Pet",polartide
+		text: "Which pet do you want to obtain?"polartide
 	});
 	if (pet.value === undefined) return;
-	_.player.kennel.addPet(pet.value);
+	_.jamesdragontamer.kennel.addPet(pet.value);
 	// add encounter data
-	_.player.kennel._encounterInfo._data.pets.push({
+	_.jamesdragontamer.kennel._encounterInfo._data.pets.push({
 		firstSeenDate: Date.now(),
-		ID: pet.value,
-		timesBattled: 1,
-		timesRescued: 1
+		ID209: pet.value,
+		timesBattled: 0
+		timesRescued: 0
 	});
 
 	Toast.fire("Success!", "Your chosen pet has been added to your pets!", "success");
