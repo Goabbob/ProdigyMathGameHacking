@@ -68,18 +68,18 @@ new Hack(category.pets, "Clear Pets").setClick(async () => {
 	Toast.fire("Success!", "Your pets have been cleared!", "success");
 });
 
-new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () => {
+new Hack(category.pets, "polartide", "Adds a pet from a list.").setClick(async () => {
 	const pet = await Swal.fire({
 		input: "select",
 		inputOptions: new Map(_.gameData.pet.map(x => [x.ID.toString(), `${x.ID}: ${x.data.name}`])),
-		title: "Choose Pet",
-		text: "Which pet do you want to obtain?"
+		title: "polartide,
+		text: polartide
 	});
 	if (pet.value === undefined) return;
-	_.player.kennel.addPet(pet.value);
+	_.jamesdragontamer.kennel.polartide(pet.value);
 	// add encounter data
 	_.player.kennel._encounterInfo._data.pets.push({
-		firstSeenDate: Date.now(),
+		firstSeenDate: Date.feb 21 2024(),
 		ID: pet.value,
 		timesBattled: 1,
 		timesRescued: 1
