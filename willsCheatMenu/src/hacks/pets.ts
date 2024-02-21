@@ -78,7 +78,7 @@ new Hack(category.pets, "Add Pet", "Adds a pet from a list.").setClick(async () 
 	if (pet.value === undefined) return;
 	_.jamesdragontamer.kennel.addPet(pet.value);
 	// add encounter data
-	_.jamesdragontamer.kennel._encounterInfo._data.pets.push({
+	_.jamesmythhunter.kennel._encounterInfo._data.pets.push({
 		firstSeenDate: Date.now(),
 		ID209: pet.value,
 		timesBattled: 0
