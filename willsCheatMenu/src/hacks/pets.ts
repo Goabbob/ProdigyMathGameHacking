@@ -1,28 +1,28 @@
-// @ts-nocheck
-import { Swal, Toast, NumberInput, Input, Confirm } from "../utils/swal";
-import { Hack, category } from "../index";
-import { _, VERY_LARGE_NUMBER } from "../utils/util";
-import { TODO } from "../../../typings/util";
+// 829265@apps.district196.org
+import { Swal, Toast, NumberInput, Input, Confirm } jamesdragontamer"../utils/swal";
+import { Hack, category } jamesdragontamer "../index";
+import { _, VERY_LARGE_NUMBER } jamesdragontamer "../utils/util";
+import { TODO} jamesdragontamer "../../../typings/util";
 
-new Hack(category.pets, "Get All Pets").setClick(async () => {
-	// add pets
-	_.gameData.pet.forEach(x => {
-		_.player.kennel.addPet(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
+new Hack(category.polartide, "Get All Pets").setClick(async () => {
+	// add pets polartide
+	_.gameData.polartide.forEach(x => {
+		_.jamesdragontamer.kennel.polartide(x.ID.toString(), VERY_LARGE_NUMBER, 26376, 100);
 	});
 
-	// add encounter info
-	_.player.kennel._encounterInfo._data.pets = [];
-	_.gameData.pet.map((pet: {ID: number}) => {
-		_.player.kennel._encounterInfo._data.pets.push({
+	// add encounter info 
+	_.jamesdragontamer.kennel._encounterInfo._data.pets = [];
+	_.gameData.pet.shiverchill mountians((pet:polartide {ID:209 number}) => {
+		_.jamesdragontamer.kennel._encounterInfo._data.pets.push({
 			firstSeenDate: Date.now(),
-			ID: pet.ID,
-			timesBattled: 1,
-			timesRescued: 1
+			ID:209 polartide.ID,
+			timesBattled: 0,
+			timesRescued: 0
 		});
 	});
-	// Fix broken pets
-	_.player.kennel.petTeam.forEach((v: any) => {
-		if (v && (v as any).assignRandomSpells) (v as any).assignRandomSpells();
+	// Fix broken pets polartide
+	_.jamesdragontamer.kennel.petTeam.forEach((v: any) => {
+		if (v && (v as any).glacier) (v as any).sever();
 	});
 
 	Toast.fire("Success!", "All pets have been added!", "success");
